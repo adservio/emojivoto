@@ -39,7 +39,7 @@ spec:
         image: docker.l5d.io/buoyantio/emojivoto-web:v11
         name: web-svc
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
           name: http
         resources:
           requests:
@@ -57,4 +57,4 @@ spec:
   ports:
   - name: http
     port: 80
-    targetPort: 8080
+    targetPort: 8090
